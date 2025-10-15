@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 旅遊助手 | 壽豐尋寶巴</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="chat-page">
+    <div class="chat-container">
+        <!-- 聊天標題列 -->
+        <div class="chat-header">
+            <button class="back-btn" onclick="location.href='index.html'">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="chat-header-info">
+                <div class="avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="header-text">
+                    <h3>壽豐 AI 助手</h3>
+                    <span class="status">
+                        <span class="status-dot"></span>
+                        線上服務中
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 聊天訊息區 -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- 歡迎訊息 -->
+            <div class="message-date">今天</div>
+            
+            <div class="message-group ai-group">
+                <div class="avatar-small">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="messages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            嗨！我是壽豐尋寶巴的 AI 助手 👋
+                        </div>
+                    </div>
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            我可以幫你：<br>
+                            🗺️ 推薦景點路線<br>
+                            📍 介紹景點特色<br>
+                            🍜 推薦在地美食<br>
+                            📸 找拍照好地方
+                        </div>
+                    </div>
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            有什麼想問的嗎？😊
+                        </div>
+                        <span class="message-time">剛剛</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 快速問題按鈕 -->
+            <div class="quick-questions" id="quickQuestions">
+                <button class="quick-btn" onclick="askQuickQuestion('推薦我半日遊路線')">
+                    <i class="fas fa-route"></i> 半日遊路線
+                </button>
+                <button class="quick-btn" onclick="askQuickQuestion('有什麼必吃美食？')">
+                    <i class="fas fa-utensils"></i> 在地美食
+                </button>
+                <button class="quick-btn" onclick="askQuickQuestion('適合拍照的景點')">
+                    <i class="fas fa-camera"></i> 拍照景點
+                </button>
+                <button class="quick-btn" onclick="askQuickQuestion('鯉魚潭有什麼好玩的？')">
+                    <i class="fas fa-fish"></i> 鯉魚潭介紹
+                </button>
+            </div>
+        </div>
+
+        <!-- 輸入區 -->
+        <div class="chat-input-area">
+            <div class="chat-input-container">
+                <button class="input-btn" title="更多功能">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="輸入你的問題..."
+                    autocomplete="off"
+                />
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

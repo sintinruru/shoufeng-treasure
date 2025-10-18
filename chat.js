@@ -10,14 +10,8 @@ const shoufengData = {
             description: '花蓮最大的內陸湖泊，湖光山色美不勝收',
             activities: '划船、騎自行車環潭、賞鳥',
             food: '活跳蝦、鹽烤魚',
-            tips: '建議早上或傍晚來，光線最美'
-        },
-        {
-            name: '花蓮糖廠（光復糖廠）',
-            description: '日治時期保留的糖廠，現為觀光景點',
-            activities: '品嚐冰淇淋、參觀日式建築、住宿體驗',
-            food: '必吃的紅豆、芋頭冰淇淋',
-            tips: '假日人多，建議平日來訪'
+            tips: '建議早上或傍晚來，光線最美',
+			link: 'https://maps.app.goo.gl/nfTgSR4WnTX1Dk5c7'
         },
         {
             name: '壽豐火車站',
